@@ -105,23 +105,6 @@
         .reason-item { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; font-size: 1.1rem; }
         .reason-item i { color: var(--pink); font-size: 1.2rem; }
 
-        /* Music Controls */
-        #music-control {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
         @media (max-width: 600px) {
             h1 { font-size: 2.8rem !important; }
             .container { padding: 20px; }
@@ -134,12 +117,6 @@
 <body>
 
     <div id="bg-animation"></div>
-    
-    <!-- Audio Element -->
-    <audio id="love-song" loop>
-        <source src="bairan.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 
     <!-- Page 0: Home -->
     <section id="page-0">
@@ -147,9 +124,8 @@
             <h1 style="font-size: 4.5rem; margin-bottom: 15px;">Chikoo, My Forever Love.</h1>
             <p style="font-size: 1.4rem; font-style: italic;">Every heartbeat of mine spells your name.</p>
             <div class="nav-group">
-                <button class="btn" onclick="nextPage(1); playMusic();">Step Into Our Story <i class="fas fa-heart"></i></button>
+                <button class="btn" onclick="nextPage(1)">Step Into Our Story <i class="fas fa-heart"></i></button>
             </div>
-            <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">(Music will play at 100% volume upon entry)</p>
         </div>
     </section>
 
@@ -194,9 +170,9 @@
         <div class="container">
             <h2>Our Milestones</h2>
             <div class="reasons-container" style="margin-top: 20px;">
-                <div class="reason-item"><i class="fas fa-star" style="color:var(--gold)"></i> <b>Sept 29, 2022:</b> The day destiny introduced me to my favorite person.</div>
-                <div class="reason-item"><i class="fas fa-comment-dots" style="color:var(--purple)"></i> Countless hours of conversations that felt like seconds.</div>
-                <div class="reason-item"><i class="fas fa-heart" style="color:var(--pink)"></i> <b>Feb 8, 2026:</b> The beginning of our official forever.</div>
+                <div class="reason-item"><i class="fas fa-star" style="color:var(--gold)"></i> <b>Sept 29, 2022:</b> The day the universe whispered that you were the one.</div>
+                <div class="reason-item"><i class="fas fa-comment-dots" style="color:var(--purple)"></i> Endless conversations where time stood still and our souls connected.</div>
+                <div class="reason-item"><i class="fas fa-heart" style="color:var(--pink)"></i> <b>Feb 8, 2026:</b> The day we officially promised our futures to each other.</div>
             </div>
             <div class="nav-group">
                 <button class="btn btn-back" onclick="nextPage(1)"><i class="fas fa-chevron-left"></i> Back</button>
@@ -212,7 +188,7 @@
             <div class="parchment">
                 My Dearest Suhani,<br><br>
                 They say that love is a journey, but with you, it feels like I’ve finally found my way home. From the very first moment back in September 2022, there was a quiet realization in my soul—a whisper that you were going to be the most important person I’d ever meet. <br><br>
-                Your presence in my life is like the first light of dawn after a long night. You are the "Chikoo" who makes the mundane feel magical and the difficult feel possible. I find myself lost in thought about you more often than I breathe. It's the way you speak, the way you care, and the way you look at the world that makes me want to be a better person every single day.<br><br>
+                Your presence in my life is like the first light of dawn after a long night. You are the "Chikoo" who makes the mundane feel magical and the difficult feel possible. I find myself lost in thought about you more often than I breathe. It's the way you speak, the way you care, and the way you look at the world that makes me want to be a better man every single day.<br><br>
                 As we count down the days to our forever, starting from February 2026, I want you to know that my commitment to you is as infinite as the stars. I promise to listen to your stories, even when I've heard them a thousand times. I promise to be your strength when you feel weak and your laughter when you feel sad.<br><br>
                 You are my greatest adventure and my softest place to land. I love you not just for who you are, but for who I am when I am with you. Through every season, every storm, and every celebration, it will always be you. Forever isn't long enough, but it's a good place to start.<br><br>
                 With all my love, always,<br>
@@ -225,22 +201,25 @@
         </div>
     </section>
 
-    <!-- Page 4: Reasons -->
+    <!-- Page 4: Reasons I Love You -->
     <section id="page-4" class="hidden">
         <div class="container">
             <h2>Infinite Reasons I Love You</h2>
             <div class="reasons-container">
                 <div class="reason-item"><i class="fas fa-heart"></i> 1. The way your eyes light up when you're truly happy.</div>
-                <div class="reason-item"><i class="fas fa-star"></i> 2. How you make the nickname 'Chikoo' sound like poetry.</div>
+                <div class="reason-item"><i class="fas fa-star"></i> 2. How you make the nickname 'Chikoo' sound like the sweetest melody.</div>
                 <div class="reason-item"><i class="fas fa-moon"></i> 3. Your kindness that knows no boundaries.</div>
                 <div class="reason-item"><i class="fas fa-spa"></i> 4. The peace I feel just sitting in silence with you.</div>
                 <div class="reason-item"><i class="fas fa-sun"></i> 5. How you believe in me even when I don't believe in myself.</div>
-                <div class="reason-item"><i class="fas fa-feather"></i> 6. Your strength and how gracefully you handle every hurdle.</div>
-                <div class="reason-item"><i class="fas fa-mug-hot"></i> 7. The warmth of your virtual hugs.</div>
-                <div class="reason-item"><i class="fas fa-music"></i> 8. Our shared dreams and the future we're building.</div>
+                <div class="reason-item"><i class="fas fa-feather"></i> 6. Your strength and how gracefully you handle every challenge.</div>
+                <div class="reason-item"><i class="fas fa-mug-hot"></i> 7. The warmth of your support that feels like home.</div>
+                <div class="reason-item"><i class="fas fa-music"></i> 8. Our shared dreams and the beautiful life we are building.</div>
                 <div class="reason-item"><i class="fas fa-cloud"></i> 9. The way you care for the smallest details of my day.</div>
                 <div class="reason-item"><i class="fas fa-infinity"></i> 10. Simply because you are my soul's perfect match.</div>
-                <p style="text-align: center; margin-top: 20px; font-style: italic; color: var(--gold);">...and infinite more reasons, added to my heart every second.</p>
+                
+                <p style="text-align: center; margin-top: 20px; font-style: italic; color: var(--gold);">
+                    ...and infinite more reasons, added to my heart with every single breath we take.
+                </p>
             </div>
             <div class="nav-group">
                 <button class="btn btn-back" onclick="nextPage(3)"><i class="fas fa-chevron-left"></i> Back</button>
@@ -254,9 +233,9 @@
         <div class="container">
             <h2>Our Future Dreams</h2>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px;">
-                <div style="width: 120px;"><i class="fas fa-plane-departure fa-3x" style="color:var(--pink)"></i><p>Paris Trips</p></div>
-                <div style="width: 120px;"><i class="fas fa-home fa-3x" style="color:var(--purple)"></i><p>Cozy Home</p></div>
-                <div style="width: 120px;"><i class="fas fa-dog fa-3x" style="color:var(--gold)"></i><p>A Cute Puppy</p></div>
+                <div style="width: 130px;"><i class="fas fa-plane-departure fa-3x" style="color:var(--pink)"></i><p>Paris at Night</p></div>
+                <div style="width: 130px;"><i class="fas fa-home fa-3x" style="color:var(--purple)"></i><p>Our Cozy Cottage</p></div>
+                <div style="width: 130px;"><i class="fas fa-dog fa-3x" style="color:var(--gold)"></i><p>A Furry Friend</p></div>
             </div>
             <div class="nav-group">
                 <button class="btn btn-back" onclick="nextPage(4)"><i class="fas fa-chevron-left"></i> Back</button>
@@ -278,33 +257,7 @@
         </div>
     </section>
 
-    <!-- Music Control -->
-    <div id="music-control" onclick="toggleMusic()">
-        <i id="music-icon" class="fas fa-music"></i>
-    </div>
-
     <script>
-        const audio = document.getElementById('love-song');
-        let isPlaying = false;
-
-        function playMusic() {
-            audio.volume = 1.0; // 100% Volume
-            audio.play().catch(err => console.log("User interaction required for audio"));
-            isPlaying = true;
-            document.getElementById('music-icon').className = "fas fa-pause";
-        }
-
-        function toggleMusic() {
-            if (isPlaying) {
-                audio.pause();
-                document.getElementById('music-icon').className = "fas fa-play";
-            } else {
-                audio.play();
-                document.getElementById('music-icon').className = "fas fa-pause";
-            }
-            isPlaying = !isPlaying;
-        }
-
         // --- Counter Logic ---
         const datingDate = new Date("Feb 8, 2026 00:00:00").getTime();
         const soulDate = new Date("Sept 29, 2022 00:00:00").getTime();
@@ -352,19 +305,14 @@
             modes[counter] = mode;
             const btns = document.querySelectorAll(`.toggle-container[data-counter="${counter}"] .mini-btn`);
             btns.forEach(b => b.classList.remove('active'));
+            // Trigger UI update
+            updateCounters();
             event.target.classList.add('active');
         }
 
         setInterval(updateCounters, 1000);
 
-        // --- Navigation ---
-        function nextPage(num) {
-            document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
-            document.getElementById(`page-${num}`).classList.remove('hidden');
-            window.scrollTo(0, 0);
-        }
-
-        // --- Hearts ---
+        // --- Background Animation ---
         function createHeart() {
             const heart = document.createElement('i');
             heart.classList.add('fas', 'fa-heart', 'heart');
@@ -375,6 +323,16 @@
             setTimeout(() => heart.remove(), 6000);
         }
         setInterval(createHeart, 400);
+
+        // --- Navigation Logic ---
+        function nextPage(num) {
+            document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(`page-${num}`).classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        // Initialize counters on load
+        updateCounters();
     </script>
 </body>
 </html>
