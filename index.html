@@ -122,4 +122,217 @@
     <section id="page-0">
         <div class="container" style="background:none; border:none; box-shadow:none;">
             <h1 style="font-size: 4.5rem; margin-bottom: 15px;">Chikoo, My Forever Love.</h1>
-            <p style="font-size: 1.4rem; font-style: italic;">Every heartbeat of mine spells your name.</
+            <p style="font-size: 1.4rem; font-style: italic;">Every heartbeat of mine spells your name.</p>
+            <div class="nav-group">
+                <button class="btn" onclick="nextPage(1)">Step Into Our Story <i class="fas fa-heart"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 1: Time Together -->
+    <section id="page-1" class="hidden">
+        <div class="container">
+            <h2>The Seconds I Treasure</h2>
+            
+            <div class="counter-box">
+                <h3 style="margin-bottom: 15px;">Dating Since Feb 8, 2026</h3>
+                <div id="dating-counter" class="time-grid"></div>
+                <div class="toggle-container" data-counter="dating">
+                    <button class="mini-btn active" onclick="setMode('dating', 'full')">Standard</button>
+                    <button class="mini-btn" onclick="setMode('dating', 'days')">Total Days</button>
+                    <button class="mini-btn" onclick="setMode('dating', 'hours')">Total Hours</button>
+                    <button class="mini-btn" onclick="setMode('dating', 'mins')">Total Mins</button>
+                    <button class="mini-btn" onclick="setMode('dating', 'secs')">Total Secs</button>
+                </div>
+            </div>
+
+            <div class="counter-box">
+                <h3 style="margin-bottom: 15px;">Hearts & Minds Since Sept 29, 2022</h3>
+                <div id="soul-counter" class="time-grid"></div>
+                <div class="toggle-container" data-counter="soul">
+                    <button class="mini-btn active" onclick="setMode('soul', 'full')">Standard</button>
+                    <button class="mini-btn" onclick="setMode('soul', 'days')">Total Days</button>
+                    <button class="mini-btn" onclick="setMode('soul', 'hours')">Total Hours</button>
+                    <button class="mini-btn" onclick="setMode('soul', 'mins')">Total Mins</button>
+                    <button class="mini-btn" onclick="setMode('soul', 'secs')">Total Secs</button>
+                </div>
+            </div>
+
+            <div class="nav-group">
+                <button class="btn btn-back" onclick="nextPage(0)"><i class="fas fa-chevron-left"></i> Back</button>
+                <button class="btn" onclick="nextPage(2)">Our Story <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Our Story -->
+    <section id="page-2" class="hidden">
+        <div class="container">
+            <h2>Our Milestones</h2>
+            <div class="reasons-container" style="margin-top: 20px;">
+                <div class="reason-item"><i class="fas fa-star" style="color:var(--gold)"></i> <b>Sept 29, 2022:</b> The day the universe whispered that you were the one.</div>
+                <div class="reason-item"><i class="fas fa-comment-dots" style="color:var(--purple)"></i> Endless conversations where time stood still and our souls connected.</div>
+                <div class="reason-item"><i class="fas fa-heart" style="color:var(--pink)"></i> <b>Feb 8, 2026:</b> The day we officially promised our futures to each other.</div>
+            </div>
+            <div class="nav-group">
+                <button class="btn btn-back" onclick="nextPage(1)"><i class="fas fa-chevron-left"></i> Back</button>
+                <button class="btn" onclick="nextPage(3)">Read My Heart <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Love Letter -->
+    <section id="page-3" class="hidden">
+        <div class="container">
+            <h2>A Letter to Chikoo</h2>
+            <div class="parchment">
+                My Dearest Suhani,<br><br>
+                They say that love is a journey, but with you, it feels like I’ve finally found my way home. From the very first moment back in September 2022, there was a quiet realization in my soul—a whisper that you were going to be the most important person I’d ever meet. <br><br>
+                Your presence in my life is like the first light of dawn after a long night. You are the "Chikoo" who makes the mundane feel magical and the difficult feel possible. I find myself lost in thought about you more often than I breathe. It's the way you speak, the way you care, and the way you look at the world that makes me want to be a better man every single day.<br><br>
+                As we count down the days to our forever, starting from February 2026, I want you to know that my commitment to you is as infinite as the stars. I promise to listen to your stories, even when I've heard them a thousand times. I promise to be your strength when you feel weak and your laughter when you feel sad.<br><br>
+                You are my greatest adventure and my softest place to land. I love you not just for who you are, but for who I am when I am with you. Through every season, every storm, and every celebration, it will always be you. Forever isn't long enough, but it's a good place to start.<br><br>
+                With all my love, always,<br>
+                <b>Titoo</b>
+            </div>
+            <div class="nav-group">
+                <button class="btn btn-back" onclick="nextPage(2)"><i class="fas fa-chevron-left"></i> Back</button>
+                <button class="btn" onclick="nextPage(4)">Infinite Reasons <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4: Reasons I Love You -->
+    <section id="page-4" class="hidden">
+        <div class="container">
+            <h2>Infinite Reasons I Love You</h2>
+            <div class="reasons-container">
+                <div class="reason-item"><i class="fas fa-heart"></i> 1. The way your eyes light up when you're truly happy.</div>
+                <div class="reason-item"><i class="fas fa-star"></i> 2. How you make the nickname 'Chikoo' sound like the sweetest melody.</div>
+                <div class="reason-item"><i class="fas fa-moon"></i> 3. Your kindness that knows no boundaries.</div>
+                <div class="reason-item"><i class="fas fa-spa"></i> 4. The peace I feel just sitting in silence with you.</div>
+                <div class="reason-item"><i class="fas fa-sun"></i> 5. How you believe in me even when I don't believe in myself.</div>
+                <div class="reason-item"><i class="fas fa-feather"></i> 6. Your strength and how gracefully you handle every challenge.</div>
+                <div class="reason-item"><i class="fas fa-mug-hot"></i> 7. The warmth of your support that feels like home.</div>
+                <div class="reason-item"><i class="fas fa-music"></i> 8. Our shared dreams and the beautiful life we are building.</div>
+                <div class="reason-item"><i class="fas fa-cloud"></i> 9. The way you care for the smallest details of my day.</div>
+                <div class="reason-item"><i class="fas fa-infinity"></i> 10. Simply because you are my soul's perfect match.</div>
+                
+                <p style="text-align: center; margin-top: 20px; font-style: italic; color: var(--gold);">
+                    ...and infinite more reasons, added to my heart with every single breath we take.
+                </p>
+            </div>
+            <div class="nav-group">
+                <button class="btn btn-back" onclick="nextPage(3)"><i class="fas fa-chevron-left"></i> Back</button>
+                <button class="btn" onclick="nextPage(5)">Dream Ahead <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 5: Future Dreams -->
+    <section id="page-5" class="hidden">
+        <div class="container">
+            <h2>Our Future Dreams</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px;">
+                <div style="width: 130px;"><i class="fas fa-plane-departure fa-3x" style="color:var(--pink)"></i><p>Paris at Night</p></div>
+                <div style="width: 130px;"><i class="fas fa-home fa-3x" style="color:var(--purple)"></i><p>Our Cozy Cottage</p></div>
+                <div style="width: 130px;"><i class="fas fa-dog fa-3x" style="color:var(--gold)"></i><p>A Furry Friend</p></div>
+            </div>
+            <div class="nav-group">
+                <button class="btn btn-back" onclick="nextPage(4)"><i class="fas fa-chevron-left"></i> Back</button>
+                <button class="btn" onclick="nextPage(6)">Final Note <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 6: Closing -->
+    <section id="page-6" class="hidden">
+        <div class="container">
+            <i class="fas fa-infinity fa-4x" style="color: var(--gold); margin-bottom: 20px;"></i>
+            <h2 style="font-size: 3.5rem;">Forever & Always</h2>
+            <p>Made with endless love by Titoo, for Chikoo.</p>
+            <div class="nav-group">
+                <button class="btn btn-back" onclick="nextPage(5)"><i class="fas fa-chevron-left"></i> Back</button>
+                <button class="btn" onclick="nextPage(0)">Back to the Start <i class="fas fa-redo"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // --- Counter Logic ---
+        const datingDate = new Date("Feb 8, 2026 00:00:00").getTime();
+        const soulDate = new Date("Sept 29, 2022 00:00:00").getTime();
+        let modes = { dating: 'full', soul: 'full' };
+
+        function updateCounters() {
+            const now = new Date().getTime();
+            renderCounter(now, datingDate, 'dating-counter', 'dating');
+            renderCounter(now, soulDate, 'soul-counter', 'soul');
+        }
+
+        function renderCounter(now, target, id, key) {
+            const diff = Math.abs(now - target);
+            const el = document.getElementById(id);
+            const mode = modes[key];
+
+            if (mode === 'full') {
+                const months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30.44));
+                const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const secs = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                el.style.gridTemplateColumns = "repeat(5, 1fr)";
+                el.innerHTML = `
+                    <div class="time-unit"><span>${months}</span><span>Mo</span></div>
+                    <div class="time-unit"><span>${days}</span><span>Day</span></div>
+                    <div class="time-unit"><span>${hours}</span><span>Hr</span></div>
+                    <div class="time-unit"><span>${mins}</span><span>Min</span></div>
+                    <div class="time-unit"><span>${secs}</span><span>Sec</span></div>
+                `;
+            } else {
+                let val, label;
+                if(mode === 'days') { val = Math.floor(diff/(1000*60*60*24)); label = 'Days'; }
+                else if(mode === 'hours') { val = Math.floor(diff/(1000*60*60)); label = 'Hours'; }
+                else if(mode === 'mins') { val = Math.floor(diff/(1000*60)); label = 'Minutes'; }
+                else if(mode === 'secs') { val = Math.floor(diff/1000); label = 'Seconds'; }
+                
+                el.style.gridTemplateColumns = "1fr";
+                el.innerHTML = `<div class="time-unit"><span>${val.toLocaleString()}</span><span>Total ${label}</span></div>`;
+            }
+        }
+
+        function setMode(counter, mode) {
+            modes[counter] = mode;
+            const btns = document.querySelectorAll(`.toggle-container[data-counter="${counter}"] .mini-btn`);
+            btns.forEach(b => b.classList.remove('active'));
+            // Trigger UI update
+            updateCounters();
+            event.target.classList.add('active');
+        }
+
+        setInterval(updateCounters, 1000);
+
+        // --- Background Animation ---
+        function createHeart() {
+            const heart = document.createElement('i');
+            heart.classList.add('fas', 'fa-heart', 'heart');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = Math.random() * 15 + 10 + 'px';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            document.getElementById('bg-animation').appendChild(heart);
+            setTimeout(() => heart.remove(), 6000);
+        }
+        setInterval(createHeart, 400);
+
+        // --- Navigation Logic ---
+        function nextPage(num) {
+            document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(`page-${num}`).classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        // Initialize counters on load
+        updateCounters();
+    </script>
+</body>
+</html>
